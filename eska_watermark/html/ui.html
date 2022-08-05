@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl-PL" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Eska - Watermark</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class='watermark' id="game_id">
+            <div class='watermark--container'>
+                <div class='main--info'>
+                    <h2 class='title'>ID:</h2>
+                </div>
+                <div class='main--id'>
+                    <span id='idText' class='id idText'>
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<style>
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb, .ipsScrollbar::-webkit-scrollbar-thumb {
+        background-color: #f89c40;
+        border-radius: 25px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        /*user-select: none;*/
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-family: 'Spartan', sans-serif;
+        z-index: -1;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .list_reset {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+/********* WATERMARK *********/
+
+.watermark {
+    display: block;
+    position: absolute;
+    text-shadow: 0px 1px 3px rgb(3 4 4 / 30%);
+    top: 2%;
+    right: 2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 20px;
+    transform: translate(-2%, -2%);
+   
+
+    border-top-left-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 10px;
+}
+
+.watermark .watermark--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.watermark .watermark--container .main--info {
+    display: block;
+    margin: 0 15px 0 0;
+}
+
+.watermark .watermark--container .main--info h2.title {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
+    line-height: 1.6;
+}
+
+.watermark .watermark--container .main--info span.subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7f8593;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.watermark .watermark--container .main--logo {
+    display: block;
+    margin: 0 15px 0 0;
+}
+
+.watermark .watermark--container .main--logo img {
+    max-width: 60px;
+}
+
+.watermark .watermark--container .main--id span.id {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+		</style>
+	</body>
+</html>
